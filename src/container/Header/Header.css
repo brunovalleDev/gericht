@@ -1,0 +1,148 @@
+.app__header {
+  background-color: var(--color-black);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 19.375rem 9.5rem;
+
+  gap: 3rem;
+}
+
+.app__header-content {
+  flex: 1;
+  max-width: 456px;
+  min-width: 456px;
+}
+
+.app__header-content_title {
+  color: var(--DCCA87, #DCCA87);
+  font-family: var(--font-base);
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 3.6px;
+  text-transform: capitalize;
+
+  margin: 0.5rem 0 2rem;
+}
+
+.app__header-content p {
+  color: var(--AAAAAA, #AAA);
+  font-family: var(--font-alt);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: 0.64px;
+  margin-bottom: 2rem;
+}
+
+.app__header-content button {
+  background: var(--color-golden);
+  padding: 0.5rem 2rem;
+
+  color: #0C0B08;
+
+  font-family: "Cormorant Upright";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%;
+  letter-spacing: 0.64px;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: 0.5s ease-in-out;
+}
+
+.app__header-content button:hover {
+  background: var(--DCCA87, #cdb662);
+}
+
+.app__header-content_img {
+  max-width: 667px;
+}
+
+.app__header-content_img img {
+  width: 100%;
+  min-width: 416px;
+  height: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  .app__header {
+    padding: 3rem 5.5rem 5.5rem;
+
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .app__header-content_img img {
+    width: 100%;
+    max-width: 350px;
+    min-width: 250px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .app__header {
+    padding: 3rem 4.5rem 5.5rem;
+  }
+
+  .app__header-content_title {
+    font-size: 65px;
+  }
+
+}
+
+@media screen and (max-width: 872px) {
+  .app__header {
+    padding: 3rem 4.5rem 5.5rem;
+    gap: 2rem;
+  }
+
+  .app__header-content {
+    flex: 1;
+    max-width: 100%;
+    min-width: 350px;
+  }
+
+  .app__header-content_title {
+    font-size: 55px;
+  }
+
+  .app__header-content_img img {
+    width: 100%;
+    min-width: 250px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .app__header {
+    padding: 3rem 2.5rem 5.5rem;
+    flex-direction: column;
+  }
+
+  .app__header-content {
+    max-width: unset;
+    min-width: unset;
+    width: 100%;
+    order: 2;
+  }
+
+  .app__header-content_title {
+    font-size: 50px;
+  }
+
+  .app__header-content p {
+    font-size: 15px;
+  }
+
+
+}
