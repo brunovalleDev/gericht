@@ -1,0 +1,181 @@
+.app__aboutus {
+  background-image: url("../../assets/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding: 8rem 7.5rem;
+
+  position: relative;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.313rem;
+}
+
+.app__aboutus-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.app__aboutus-bg img {
+  width: 391px;
+  height: 415px;
+}
+
+.app__aboutus-about,
+.app__aboutus-history {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  max-width: 523px;
+}
+
+.app__aboutus-about {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.app__aboutus-about img {
+  transform: scaleX(-1);
+}
+
+.app__aboutus-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__aboutus-img img {
+  width: 84px;
+  height: 703px;
+}
+
+.app__aboutus-history {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.app__aboutus-about_heading h2,
+.app__aboutus-history_heading h2 {
+  color: var(--color-golden);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: var(--font-base);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 1.92px;
+  text-transform: capitalize;
+}
+
+.app__aboutus-about p,
+.app__aboutus-history p {
+  color: var(--color-gray);
+  font-family: var(--font-alt);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: 0.64px;
+}
+
+.app__aboutus-about button,
+.app__aboutus-history button {
+  font-family: var(--font-base);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%;
+  letter-spacing: 0.64px;
+  color: var(--color-black);
+
+  padding: 0.5rem 2rem;
+
+  background: var(--color-golden);
+
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+@media screen and (max-width: 1170px) {
+  .app__aboutus {
+    padding: 8rem 2.5rem;
+  }
+
+}
+
+@media screen and (max-width: 834px) {
+  .app__aboutus {
+    padding: 5rem 1.5rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .app__aboutus-about,
+  .app__aboutus-history {
+    text-align: left;
+    align-items: flex-start;
+    max-width: 90%;
+  }
+
+  .app__aboutus-about_heading h2,
+  .app__aboutus-history_heading h2 {
+    font-size: 60px;
+  }
+
+  .app__aboutus-img {
+    transform: rotate(80deg);
+    margin: -10rem 0;
+  }
+
+  .app__aboutus-img img {
+    width: 100%;
+    height: 500px;
+  }
+
+}
+
+@media screen and (max-width: 568px) {
+  .app__aboutus {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .app__aboutus-bg img {
+    width: 60%;
+    object-fit: contain;
+  }
+
+  .app__aboutus-about,
+  .app__aboutus-history {
+    max-width: 100%;
+  }
+
+  .app__aboutus-about_heading h2,
+  .app__aboutus-history_heading h2 {
+    font-size: 50px;
+  }
+
+  .app__aboutus-img {
+    transform: rotate(80deg);
+    margin: -5rem 0;
+  }
+
+  .app__aboutus-img img {
+    width: 100%;
+    height: 300px;
+  }
+
+}
