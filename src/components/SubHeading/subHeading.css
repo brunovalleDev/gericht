@@ -10,7 +10,7 @@
   height: 9px;
 }
 
-.app__header-content_subheading h2 {
+.app__header-content_subheading h4 {
   color: var(--FFFFFF, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
   font-family: "Cormorant Upright";

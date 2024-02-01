@@ -4,7 +4,7 @@ import images from '../../constants/images';
 
 const SubHeading = ({ title }) => (
   <div className="app__header-content_subheading">
-    <h2>{title}</h2>
+    <h4>{title}</h4>
     <img src={images.spoon} alt="subheading__spoon" />
   </div>
 );
