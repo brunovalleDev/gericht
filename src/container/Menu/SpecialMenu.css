@@ -34,7 +34,7 @@
   letter-spacing: 2.56px;
   text-transform: capitalize;
 
-  min-width: 410px;
+  width: 100%;
 }
 
 .app__menu-container {
@@ -126,7 +126,7 @@
   }
 
   .app__menu-heading h2 {
-    font-size: 55px;
+    font-size: 45px;
   }
 
 
