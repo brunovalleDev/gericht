@@ -1,0 +1,89 @@
+.app__findus {
+  background-image: url('../../assets/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  padding: 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.5rem;
+}
+
+.app__findus-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  margin-bottom: 4rem;
+}
+
+.app__findus-heading h2 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-size: 64px;
+  line-height: 83.2px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.app__findus-content {
+  max-width: 513px;
+  min-width: 250px;
+}
+
+.app__findus-content button {
+  margin-top: 4rem;
+}
+
+.app__findus-img {
+  flex: 1;
+  max-width: 667px;
+  min-width: 360px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__findus-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 821px) {
+  .app__findus {
+    padding: 5rem;
+    gap: 4rem;
+  }
+
+  .app__findus-heading {
+    margin-bottom: 2rem;
+  }
+
+  .app__findus-content button {
+    margin-top: 2rem;
+  }
+
+  .app__findus-img {
+    min-width: 280px;
+  }
+
+  .app__findus-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media screen and (max-width: 660px) {
+  .app__findus {
+    padding: 5rem;
+    gap: 4rem;
+
+    flex-direction: column;
+  }
+}
