@@ -1,0 +1,136 @@
+.app__footer-newsletter {
+  width: 100%;
+  max-width: 1300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid var(--color-golden);
+  padding: 4rem 2rem;
+  background: var(--color-black);
+}
+
+.app__footer-newsletter_heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+
+  text-align: center;
+}
+
+.app__footer-newsletter_heading img {
+  width: 100%;
+}
+
+.app__footer-newsletter_heading h2 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-size: 64px;
+  line-height: 83.2px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+
+.app__footer-newsletter p {
+  font-family: var(--font-alt);
+  color: var(--color-white);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.app__footer-newsletter_email {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 796px;
+}
+
+.app__footer-newsletter_email input {
+  flex: 1;
+  color: var(--color-golden);
+
+  font-family: var(--font-base);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 20px;
+
+  padding: 1rem 2rem;
+  outline: none;
+  background: transparent;
+
+  border: 1px solid var(--color-crimson);
+}
+
+.app__footer-newsletter_email button {
+  background-color: var(--color-golden);
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+
+  width: 129px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .app__footer-newsletter_heading h2 {
+    font-size: 35px;
+    line-height: 50.2px;
+  }
+
+  .app__footer-newsletter p {
+    font-size: 14px;
+  }
+
+  .app__footer-newsletter_email {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 796px;
+
+    flex-direction: column;
+  }
+
+  .app__footer-newsletter_email input {
+    font-size: 18px;
+  }
+
+  .app__footer-newsletter_email button {
+    background-color: var(--color-golden);
+    color: var(--color-black);
+    font-family: var(--font-base);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+
+    width: 129px;
+  }
+
+}

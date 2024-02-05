@@ -1,0 +1,19 @@
+.app__footer-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.app__footer-overlay_black {
+  height: 25%;
+  background-color: var(--color-black);
+}
+
+.app__footer-overlay-img {
+  background: url('../../assets//bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 75%;
+}
